@@ -4,6 +4,12 @@
     brew install wrk
     wrk -t12 -c400 -d30s http://127.0.0.1:8080/hello
 
+- Gist is underlying architecture:
+  - eclipse jetty gets about 55,000 requests/sec
+  - jboss netty gets about 70,000 requests/sec
+  - eclipse vertx gets about 70,000 requests/sec
+  - jboss xnio gets about 80,000 requests/sec
+
 ### :dropwizard (eclipse jetty)
     Running 30s test @ http://127.0.0.1:8080/hello
       12 threads and 400 connections
@@ -118,5 +124,4 @@
       Socket errors: connect 0, read 267, write 0, timeout 0
     Requests/sec:  84971.76
     Transfer/sec:     11.17MB
-- Pretty raw. Deal with HttpServerExchange
 - Requests/sec:  84971.76
