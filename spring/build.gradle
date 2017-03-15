@@ -1,0 +1,15 @@
+ext.springVer = "4.3.5.RELEASE"
+ext.springCamelVer = "2.18.2"
+ext.springBootVer = "1.4.3.RELEASE"
+
+dependencies {
+    // For REST interaction
+    compile("org.apache.httpcomponents:httpclient:4.5.3")
+    compile("com.google.code.gson:gson:2.8.0")
+
+    // For Dependency Injection, JDBC ActiveRecords, and Embedded Jetty
+    compile("org.springframework:spring-core:$springVer")
+    compile("org.springframework.boot:spring-boot:$springBootVer")
+    compile("org.springframework.boot:spring-boot-starter-jetty:$springBootVer")
+    compile("org.springframework:spring-webmvc:$springVer")
+}

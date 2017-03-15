@@ -1,0 +1,5 @@
+dependencies {
+    compile "io.undertow:undertow-core:1.2.11.Final"
+//    compile "io.undertow:undertow-servlet:1.2.11.Final"
+//    compile "io.undertow:undertow-websockets-js:1.2.11.Final"
+}

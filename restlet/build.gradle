@@ -1,0 +1,7 @@
+repositories {
+    maven { url "http://maven.restlet.org" }
+}
+
+dependencies {
+    compile "org.restlet.jse:org.restlet:2.3.9"
+}
